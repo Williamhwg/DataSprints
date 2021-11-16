@@ -230,29 +230,31 @@ def question6():
 # Main Function
 # ------------------------------------------------------- #
 
-plt.style.use('ggplot')
+if __name__ == '__main__':
 
-conn = sqlite3.connect('nyctaxitrips.db') # Create database if it doesn't exist
-cursor = conn.cursor()
+    plt.style.use('ggplot')
 
-# Load files into DataBase
-files = ["data-sample_data-nyctaxi-trips-2009-json_corrigido.json", 
-"data-sample_data-nyctaxi-trips-2010-json_corrigido.json",
-"data-sample_data-nyctaxi-trips-2011-json_corrigido.json",
-"data-sample_data-nyctaxi-trips-2012-json_corrigido.json",
-"data-payment_lookup-csv.csv", "data-vendor_lookup-csv.csv"]
+    conn = sqlite3.connect('nyctaxitrips.db') # Create database if it doesn't exist
+    cursor = conn.cursor()
 
-# ------------ Execução das rotinas ------------ #
+    # Load files into DataBase
+    files = ["data-sample_data-nyctaxi-trips-2009-json_corrigido.json", 
+    "data-sample_data-nyctaxi-trips-2010-json_corrigido.json",
+    "data-sample_data-nyctaxi-trips-2011-json_corrigido.json",
+    "data-sample_data-nyctaxi-trips-2012-json_corrigido.json",
+    "data-payment_lookup-csv.csv", "data-vendor_lookup-csv.csv"]
 
-# Criação do banco de dados
-#loadData(files)
+    # ------------ Execução das rotinas ------------ #
 
-# Módulo das respostas
-# question1()
-# question2()
-# question3()
-# question4()
-# question5()
-# question6()
+    # Criação do banco de dados
+    #loadData(files)
 
-conn.close()
+    # Módulo das respostas
+    # question1()
+    # question2()
+    # question3()
+    # question4()
+    # question5()
+    # question6()
+
+    conn.close()
