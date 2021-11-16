@@ -5,6 +5,9 @@
 ### Descrição para reprodução das análises
 
 Para a solução das questões, foi criado o arquivo "main.py" onde nele se encontra todo o código utilizado para a atividade.
+
+Os arquivos .json e .csv disponibilizados devem estar localizados no mesmo diretório do arquivo "main.py" para que a rotina seja executada.
+
 O arquivo está dividido por módulos que correspondem a solução de cada pergunta.
 
 No desenvolvimento deste case, eu optei por praticar sempre quando possível a utilização de queries em SQL para responder aos itens. A solução foi estruturada pensando em cada questão isoladamente, e não de forma eficiente em processamento em que poderia ser extraída apenas uma vez a base e então realizada todas as transformações sobre ela. 
